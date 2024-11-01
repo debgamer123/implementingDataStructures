@@ -7,5 +7,11 @@ public class Main {
         linkedList.add(10);
         linkedList.add(20);
         linkedList.add(30);
+        linkedList.add(40);
+        LinkedList.Node temp = linkedList.getHead();
+        while (temp != null){
+            System.out.print(temp.getData()+ " ");
+            temp = temp.getNext();
+        }
     }
 }

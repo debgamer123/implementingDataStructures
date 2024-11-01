@@ -21,15 +21,19 @@ public class LinkedList {
         tail = head;
         noOfElement++;
     }
-    private class Node {
+    public class Node {
         int data;
 
-        public void setData(int data) {
-            this.data = data;
+        public int getData() {
+            return this.data;
         }
 
         public void setNext(Node next) {
             this.next = next;
+        }
+
+        public Node getNext(){
+            return this.next;
         }
 
         private Node(int data, Node next) {
@@ -38,5 +42,9 @@ public class LinkedList {
         }
 
         Node next;
+    }
+
+    public Node getHead() {
+        return head;
     }
 }
